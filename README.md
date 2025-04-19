@@ -1,24 +1,26 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Rails application that allows users to view, add, and review restaurants. The application features two models: Restaurant and Review, with CRUD functionality for both.
 
-Things you may want to cover:
+Tech stack used:
+BackEnd:
+Ruby on Rails 8.0.2
 
-* Ruby version
+FrontEnd:
+Bootstrap CDN
 
-* System dependencies
 
-* Configuration
+Gems:
+"simple_form"
 
-* Database creation
+"rspec-rails" (for testing)
 
-* Database initialization
+"rails-controller-testing" (for testing)
 
-* How to run the test suite
+Features:
+Create, View, Edit, and Delete Restaurants: Users can manage restaurant records with name, address, phone number, and category.
 
-* Services (job queues, cache servers, search engines, etc.)
+Add Reviews to Restaurants: Users can submit reviews with a rating (0-5) and comments for any restaurant.
 
-* Deployment instructions
+Responsive UI: Built with Bootstrap for responsive, user-friendly design.
 
-* ...
+Testing: RSpec and other testing gems are included to ensure the app works correctly.
