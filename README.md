@@ -1,26 +1,30 @@
+# Restaurant Reviews App
 
-A simple Rails application that allows users to view, add, and review restaurants. The application features two models: Restaurant and Review, with CRUD functionality for both.
+A simple Rails application that allows users to view, add, and review restaurants. The application features two models: **Restaurant** and **Review**, with CRUD functionality for both.
 
-Tech stack used:
-BackEnd:
-Ruby on Rails 8.0.2
+## Tech Stack Used
 
-FrontEnd:
-Bootstrap CDN
+### BackEnd:
+- Ruby on Rails 8.0.2
 
+### FrontEnd:
+- Bootstrap CDN
 
-Gems:
-"simple_form"
+### Gems:
+- **"simple_form"**
+- **"rspec-rails"** (for testing)
+- **"rails-controller-testing"** (for testing)
 
-"rspec-rails" (for testing)
+## Features
 
-"rails-controller-testing" (for testing)
+- **Create, View, Edit, and Delete Restaurants**  
+  Users can manage restaurant records with name, address, phone number, and category.
 
-Features:
-Create, View, Edit, and Delete Restaurants: Users can manage restaurant records with name, address, phone number, and category.
+- **Add Reviews to Restaurants**  
+  Users can submit reviews with a rating (0-5) and comments for any restaurant.
 
-Add Reviews to Restaurants: Users can submit reviews with a rating (0-5) and comments for any restaurant.
+- **Responsive UI**  
+  Built with **Bootstrap** for a responsive, user-friendly design.
 
-Responsive UI: Built with Bootstrap for responsive, user-friendly design.
-
-Testing: RSpec and other testing gems are included to ensure the app works correctly.
+- **Testing**  
+  **RSpec** and other testing gems are included to ensure the app works correctly.
