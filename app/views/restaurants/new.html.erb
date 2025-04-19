@@ -1,0 +1,12 @@
+
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+  <div class="w-50">
+    <%= simple_form_for @restaurant do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category, collection: ['Italian', 'Japanese', 'Chinese', 'Mexican'], prompt: "Select a category" %>
+      <%= f.button :submit, class: "btn btn-primary mt-3" %>
+    <% end %>
+  </div>
+</div>

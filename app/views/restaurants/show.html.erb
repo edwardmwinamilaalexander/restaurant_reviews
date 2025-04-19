@@ -1,0 +1,21 @@
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+  <div class="w-75">
+    <p><strong>Name:</strong> <%= @restaurant.name %></p>
+    <p><strong>Address:</strong> <%= @restaurant.address %></p>
+    <p><strong>Phone number:</strong> <%= @restaurant.phone_number %></p>
+    <p><strong>Category:</strong> <%= @restaurant.category %></p>
+
+    <h5 class="mt-4">Reviews</h5>
+    <% @restaurant.reviews.each do |review| %>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h6 class="card-title">Rating: <%= review.rating %></h6>
+          <p class="card-text"><%= review.content %></p>
+        </div>
+      </div>
+    <% end %>
+    <div class="mt-4">
+      <%= link_to 'Add Review', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
